@@ -6,8 +6,9 @@ function showBaseEmail() {
     const baseEmail = items.baseEmail;
     if (baseEmail) {
       document.getElementById("i-base-email").value = baseEmail;
+      document.getElementById("current-base-email").innerText = baseEmail;
     } else {
-      document.getElementById("i-base-email").innerHTML = "No base email found";
+      document.getElementById("current-base-email").innerText = "No base email found"
     }
   });
 };
