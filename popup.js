@@ -38,7 +38,7 @@ function getCurrent() {
 function generate() {
   storage.get(function(items) {
     if(!items.baseEmail) return alert('No base email found');
-    const emails = !!items.emails ? items.emails.slice(0,9) : [];
+    const emails = !!items.emails ? items.emails.slice(-9) : [];
     const baseEmail = items.baseEmail.split('@');
     let newEmail = `${baseEmail[0]}+${getCurrent()}@${baseEmail[1]}`;
 
