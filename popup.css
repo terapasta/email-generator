@@ -1,0 +1,124 @@
+body {
+  width: 300px;
+  height: 200px;
+}
+
+.popup {
+  width: 100%;
+  height: 100%;
+}
+
+.popup-email-wrapper {
+  width: 100%;
+  font-size: 16px;
+  padding: 8px;
+}
+
+#current-email {
+  display: inline-block;
+  word-break: break-all;
+}
+
+.popup-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-btn-wrapper {
+  position: relative;
+  width: 100%;
+}
+.popup-btn-wrapper:not(:last-child) {
+  margin-right: 8px;
+}
+
+.popup-btn {
+  width: 100%;
+  height: 28px;
+  background-color: #037dd6;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+}
+.popup-btn:hover {
+  opacity: .8;
+}
+
+.popup-base-email-area {
+  position: relative;
+  padding: 4px;
+}
+
+.popup-label {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.popup-i-field {
+  position: relative;
+  width: 100%;
+  height: 28px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.popup-emails {
+  margin: 12px 0;
+}
+
+.emails-list-item {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-top: none;
+  word-break: break-all;
+}
+
+.emails-list-item:first-child {
+  border-top: 1px solid #ccc;
+  border-radius: 8px 8px 0 0;
+}
+
+.emails-list-item:last-child {
+  border-radius: 0 0 8px 8px;
+}
+
+.emails-list-item div {
+  padding: 8px;
+}
+
+.email-text-cell {
+  position: relative;
+}
+
+.copy-btn {
+  width: 50px;
+}
+
+.current-email-copied:after {
+  content: 'Copied!';
+  position: absolute;
+  top: -85%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 16px;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: #D3D3D3;
+}
+
+.copied:after {
+  content: 'Copied!';
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 16px;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: #D3D3D3;
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>
+    Getting Started Extension's Popup
+  </title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="popup.js"></script>
+</head>
+
+<body>
+  <div class="popup">
+    <section class="popup-current-email-area">
+      <div class="popup-email-wrapper"><span id="current-email"></span></div>
+      <div class="popup-btns">
+        <div class="popup-btn-wrapper">
+          <button id="generate-email" class="popup-btn">Generate</button>
+        </div>
+        <div class="popup-btn-wrapper">
+          <button id="copy-email" class="popup-btn">Copy</button>
+        </div>
+      </div>
+    </section>
+    <section class="popup-emails-area">
+      <div id="emails-list" class="popup-emails">
+      </div>
+    </section>
+    <section class="popup-base-email-area">
+      <div class="popup-label">Base Email: <span id="current-base-email"></span></div>
+      <input id="i-base-email" class="popup-i-field"><button id="i-base-email-btn" class="popup-btn">Update</button>
+    </section>
+  </div>
+</body>
+
+</html>
