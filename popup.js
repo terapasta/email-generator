@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const generateBtn = document.getElementById('generate-email');
   const copyCurrentEamilBtn = document.getElementById('copy-email');
   const baseEmailBtn = document.getElementById('i-base-email-btn');
-
+  const clearBtn = document.getElementById('clear-btn');
 
   generateBtn.addEventListener('click', function() {
     console.log('clicked generateBtn');
@@ -143,5 +143,15 @@ document.addEventListener('DOMContentLoaded', function() {
   baseEmailBtn.addEventListener('click', function() {
     console.log('clicked baseEmailBtn');
     updateBaseEmail();
+  });
+
+  clearBtn.addEventListener('click', function() {
+    console.log('clicked clearBtn');
+    storage.clear(function() {
+      console.log('cleared storage');
+      showCurrentEmail();
+      showBaseEmail();
+      document.getElementById('emails-list').innerHTML = '';
+    });
   });
 });

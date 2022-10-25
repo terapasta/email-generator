@@ -45,7 +45,11 @@ body {
   opacity: .8;
 }
 
-.popup-base-email-area {
+.popup-btn-clear {
+  background-color: #FF6347;
+}
+
+.popup-base-email-area, .popup-clear-area {
   position: relative;
   padding: 4px;
 }
@@ -83,6 +87,10 @@ body {
 
 .emails-list-item:last-child {
   border-radius: 0 0 8px 8px;
+}
+
+.emails-list-item:only-child {
+  border-radius: 8px;
 }
 
 .emails-list-item div {
