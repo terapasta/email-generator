@@ -1,5 +1,5 @@
 {
-  "name": "Email Generator",
+  "name": "Email Alias Generator",
   "description": "Generate a unique email address from the base email address using gmail's alias feature.",
   "version": "1.0.0",
   "manifest_version": 3,
